@@ -1,0 +1,28 @@
+.btn, button {
+	border: 2px solid $darkgrey;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: ($gutter / 2.5) $gutter;
+	display: inline-block;
+	margin: ($gutter / 2.5) 0;
+	outline: none;
+	position: relative;
+	transition: all 0.2s;
+	&:hover{
+		background: $darkgrey;
+		color: white;
+	}
+}
+.btn{
+	&--white{
+		border-color: white;
+		color: white;
+		&:hover{
+			background: white;
+			color: $darkgrey;
+		}
+	}
+}

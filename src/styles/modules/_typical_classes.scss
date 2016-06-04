@@ -1,0 +1,62 @@
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.white{
+	color: white;
+}
+.fixed{
+	position: fixed;
+}
+.black{
+	color: black;
+}
+.no__margin{
+	margin: 0;
+}
+.full__width{
+	width: 100%;
+}
+.half__width{
+	width: 50%;
+}
+.white__text{
+	color: white;
+}
+.flex{
+	display: flex;
+}
+.flex__center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex__wrap{
+	flex-wrap: wrap;
+}
+.text__center{
+	text-align: center;
+}
+.cover__it{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.standard__padding{
+	padding: $gutter;
+}
+.big__padding{
+	padding: ($gutter * 2);
+}
