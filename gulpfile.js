@@ -18,7 +18,7 @@ gulp.task('js', function() {
     gulp.src('src/js/*.js')
         // concat pulls all our files together before minifying them
         .pipe( concat('main.min.js') )
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./public/'))
 });
 gulp.task('watch', function () {

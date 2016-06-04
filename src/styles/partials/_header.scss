@@ -1,0 +1,12 @@
+.main__header{
+  padding: ($gutter * 1.25);
+}
+.logo{
+  background: url(logo.svg);
+  width: 256px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: ($gutter * 0.75);
+}

@@ -1,0 +1,16 @@
+.time__info{
+  position: fixed;
+  left: ($gutter * 2.5);
+  top: 50%;
+}
+.time__phase,
+.time__text{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.time__info__title{
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

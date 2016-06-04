@@ -7,11 +7,32 @@
     <meta name="keywords" content="HTML,SASS,Gulp,JavaScript">
     <meta name="author" content="Martin Risseeuw">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="./public/main.css">
   </head>
   <body>
-    <h1>Simple boilerplate</h1>
+    <header class="main__header flex flex__center">
+      <div class="main__header__inner flex flex__center flex__wrap">
+        <div class="logo"></div>
+        <nav class="main__navigation full__width flex flex__center white__text">
+          <ul class="main__navigation__list">
+            <li class="main__navigation__list__item">Timetable</li>
+            <li class="main__navigation__list__item">Location</li>
+            <li class="main__navigation__list__item">About</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="flex flex__center flex__wrap">
+      <h2 class="tagline white__text">Expierence the Surinamees sunrise in the Netherlands</h2>
+      <div class="time__info white__text">
+        <h2 class="time__info__title">Current fase</h2>
+        <h3 id="phase" class="time__phase">Astronomical twilight</h3>
+        <p class="time__text"><time id="timefrom">10:16</time> - <time id="timeto">10:42</time></p>
+        <p id="txt"></p>
+      </div>
+    </main>
+    <!-- Load scripts -->
     <script src="./public/main.min.js"></script>
-    <button>HELP</button>
   </body>
 </html>
