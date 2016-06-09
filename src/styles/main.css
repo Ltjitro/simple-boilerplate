@@ -860,7 +860,7 @@ body.dark {
 .tagline {
   font-size: 2.2em;
   line-height: 1.2em;
-  text-align: center;
+  text-align:left;
   width: 90%;
   max-width: 24em;
   line-height: 1.5em;
@@ -868,6 +868,9 @@ body.dark {
   top: 50%;
   left: 50%;
   color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
   transform: translate(-50%, -50%); }
 
 /* line 217, /Users/martinrisseeuw/Documents/Projects/martinrnew/sass/partials/layout */
@@ -1525,7 +1528,7 @@ a .menuThumb p {
     width: 50%; }
 
   /* line 13, /Users/martinrisseeuw/Documents/Projects/martinrnew/sass/partials/mediaqueries */
-  .tagline {
+  .tagline{
     font-size: 1.2em; }
 
   /* line 16, /Users/martinrisseeuw/Documents/Projects/martinrnew/sass/partials/mediaqueries */
