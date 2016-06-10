@@ -1,6 +1,4 @@
-body{
-  transition: background ease-in-out;
-}
+
 .phase-1{
   background: rgba(13,87,158,1);
   background: linear-gradient(to bottom, rgba(13,87,158,1) 0%, rgba(136,4,159,1) 100%);
@@ -44,6 +42,10 @@ body{
 .tagline{
   font-size: 1.5em;
   max-width: 15em;
-  text-align: center;
+  text-align: left;
   font-weight: 300;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
 }

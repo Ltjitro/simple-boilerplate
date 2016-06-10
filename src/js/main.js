@@ -14,13 +14,15 @@ function startTime() {
   var t = setTimeout(startTime, 500);
   var completeTimeNumber = (h * 100) + m;
   // document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
-
+  var timeSeconds = (h * 3600) + (m * 60);
   //elements
   var phase = document.getElementById('phase');
   var timefrom = document.getElementById('timefrom');
   var timeto = document.getElementById('timeto');
   var body = document.body;
 
+  console.log(h);
+  console.log(m);
   if(completeTimeNumber >= 513 && completeTimeNumber <= 540){
     console.log('Morning astronomical twilight');
     phase.innerHTML = 'Morning astronomical twilight';
