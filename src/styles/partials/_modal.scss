@@ -78,6 +78,11 @@ td{
     transform: translateY(-50%) scale(1);
   }
 }
+.modal__about{
+  width: 100%;
+  width: 600px;
+  left: calc(50% - 300px);
+}
 .modal__about,
 .modal__location{
   &.active{
