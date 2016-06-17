@@ -102,6 +102,8 @@
       var closeLocation = document.querySelector('.close__location');
 
       timeMenu.addEventListener("click", function(){
+        aboutMenu.classList.remove('active');
+        locationModal.classList.remove('active');
         timeModal.classList.toggle('active');
       });
       closeTime.addEventListener("click", function(){
@@ -109,6 +111,8 @@
       });
 
       aboutMenu.addEventListener("click", function(){
+        timeModal.classList.remove('active');
+        locationModal.classList.remove('active');
         aboutModal.classList.toggle('active');
       });
       closeAbout.addEventListener("click", function(){
@@ -116,6 +120,8 @@
       });
 
       locationMenu.addEventListener("click", function(){
+        timeModal.classList.remove('active');
+        aboutModal.classList.remove('active');
         locationModal.classList.toggle('active');
       });
       closeLocation.addEventListener("click", function(){
