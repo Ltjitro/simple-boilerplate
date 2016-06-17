@@ -15,30 +15,27 @@ function startTime() {
   var completeTimeNumber = (h * 100) + m;
   // document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
   var timeSeconds = (h * 3600) + (m * 60);
+
   //elements
   var phase = document.getElementById('phase');
   var timefrom = document.getElementById('timefrom');
   var timeto = document.getElementById('timeto');
   var body = document.body;
-
-  console.log(h);
-  console.log(m);
+  
   if(completeTimeNumber >= 513 && completeTimeNumber <= 540){
-    console.log('Morning astronomical twilight');
     phase.innerHTML = 'Morning astronomical twilight';
     timefrom.innerHTML = '05:13';
     timeto.innerHTML = '05:40';
     body.className = "phase-1";
   }
   else if(completeTimeNumber >= 540 && completeTimeNumber <= 607){
-    console.log('Morning nautical twilight');
     phase.innerHTML = 'Morning nautical twilight';
     timefrom.innerHTML = '05:40';
     timeto.innerHTML = '06:07';
     body.className = "phase-2";
+
   }
   else if(completeTimeNumber >= 607 && completeTimeNumber <= 629){
-    console.log('Morning civil twilight');
     phase.innerHTML = 'Morning civil twilight';
     timefrom.innerHTML = '06:07';
     timeto.innerHTML = '06:29';
@@ -46,15 +43,20 @@ function startTime() {
     // Morning civil twilight
   }
   else if(completeTimeNumber >= 629 && completeTimeNumber <= 649){
-      setInfo('Sunrise', '06:29', '06:49', 'phase-4');
+      phase.innerHTML = 'Sunrise';
+      timefrom.innerHTML = '06:29';
+      timeto.innerHTML = '06:49';
+      body.className = "phase-4";
     // Sunrise
   }
   else if(completeTimeNumber >= 649 && completeTimeNumber <= 1835){
-    setInfo('Daylight', '06:49', '18:35', 'phase-5');
+      phase.innerHTML = 'Daylight';
+      timefrom.innerHTML = '06:49';
+      timeto.innerHTML = '18:35';
+      body.className = "phase-5";
     // Day
   }
   else if(completeTimeNumber >= 1835 && completeTimeNumber <= 1855){
-    console.log('Sunset');
     phase.innerHTML = 'Sunset';
     timefrom.innerHTML = '18:35';
     timeto.innerHTML = '18:55';
@@ -62,7 +64,6 @@ function startTime() {
     // Sunset
   }
   else if(completeTimeNumber >= 1855 && completeTimeNumber <= 1918){
-    console.log('Evening civil twilight');
     phase.innerHTML = 'Evening civil twilight';
     timefrom.innerHTML = '18:55';
     timeto.innerHTML = '19:18';
@@ -70,7 +71,6 @@ function startTime() {
     // Evening civil twilight
   }
   else if(completeTimeNumber >= 1918 && completeTimeNumber <= 1944){
-    console.log('Evening nautical twilight');
     phase.innerHTML = 'Evening nautical twilight';
     timefrom.innerHTML = '19:18';
     timeto.innerHTML = '19:44';
@@ -78,7 +78,6 @@ function startTime() {
     // Evening nautical twilight
   }
   else if(completeTimeNumber >= 1944 && completeTimeNumber <= 2011){
-    console.log('Evening astronomical twilight');
     phase.innerHTML = 'Evening astronomical twilight';
     timefrom.innerHTML = '19:44';
     timeto.innerHTML = '20:11';
@@ -86,7 +85,6 @@ function startTime() {
     // Evening astronomical twilight
   }
   else{
-    console.log('Night-time');
     phase.innerHTML = 'Evening astronomical twilight';
     timefrom.innerHTML = '20:11';
     timeto.innerHTML = '05:13';

@@ -84,15 +84,23 @@ td{
     opacity: 1;
     transform: translateY(-50%) scale(1);
     p{
-      font-size: 1.5em;
+
       font-weight: 300;
-      margin-bottom: .5em;
-      line-height: 1.1em;
-      span{
-        color: #9B9B9B;
-      }
     }
   }
+}
+.modal__location{
+    &.active{
+      p{
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: .5em;
+        line-height: 1.1em;
+        span{
+          color: #9B9B9B;
+        }
+      }
+    }
 }
 .modal__location{
   width: 798px;
