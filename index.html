@@ -16,9 +16,9 @@
         <div class="logo"></div>
         <nav class="main__navigation full__width flex flex__center white__text">
           <ul class="main__navigation__list">
-            <li class="main__navigation__list__item">Timetable</li>
-            <li class="main__navigation__list__item">Location</li>
-            <li class="main__navigation__list__item">About</li>
+            <li class="main__navigation__list__item time__menu">Timetable</li>
+            <li class="main__navigation__list__item location__menu">Location</li>
+            <li class="main__navigation__list__item about__menu">About</li>
           </ul>
         </nav>
       </div>
@@ -32,7 +32,96 @@
         <p id="txt"></p>
       </div>
     </main>
+    <div class="modal modal__timetable">
+      <h2 class="modal__title">Timetable</h2>
+      <p class="modal__text">Best time to visit is bewteen Civil twillight and Sunrise</p>
+      <table>
+        <thead class="table__head">
+          <tr>
+             <th>Fases</th>
+             <th>Time</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr>
+            <td>Astronomical twilight</td>
+            <td>10:16 - 10:42</td>
+          </tr>
+          <tr>
+            <td>Nautical twilight</td>
+            <td>10:42 - 11:07</td>
+          </tr>
+          <tr>
+            <td>Civil twilight</td>
+            <td>11:15 - 11:28</td>
+          </tr>
+          <tr>
+            <td>Golden hour</td>
+            <td>11:28 - 11:58</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>5 Hour difference backwards to Suriname</p>
+      <button class="close__modal close__time"></button>
+    </div>
+    <div class="modal modal__about">
+      <h2 class="modal__title">Artist statement</h2>
+      <p>Loktu Fensre is the longing I have for my country of birth, Suriname. The title translates to Sky Window. My homeland where I’m most at place stands at the heart of the work. During my visits to Suriname and returning back to the Netherlands, I want to hold a connection to my country.</p>
+      <p>For me the gorgeous golden hour, in Surinamese time, connects to the feeling of home. The native wood Purple Heart, in which the ellipse object emits its light from strengthens this connection, needing light to turn into its stunning purple color. The material and light are the focal points in my work. There is a five hour time difference between the Netherlands and Suriname, heightening the longing and desire to experience the golden hour in real time.</p>
+      <p class="about__colophon">Project created by Luciano Tjitrodipo - In collaboration with Rob van der Burg C/C++ & hardware - Martin Risseeuw - C/C++ & web-development</p>
+      <button class="close__modal close__about"></button>
+    </div>
+    <div class="modal modal__location flex">
+      <div class="left__modal visit">
+        <h2 class="modal__title">Location</h2>
+        <p><span>Visit the installation at</span><br/> Royal Academy of Art Prinsessegracht 4 2514 AN Den Haag</p>
+        <p><span>Make your way to the</span> Interactive / Media / Design Deparment</p>
+        <p>Open from 11:00 - 17:00 2 → 7 July 2016</p>
+      </div>
+      <div class="map">
+        <a href="https://www.google.com/maps/dir//Prinsessegracht+4,+2514+AN+Den+Haag,+Netherlands/@52.08164,4.3150233,16z" class="directbtn">Get directions</a>
+      </div>
+      <button class="close__modal close__location"></button>
+    </div>
+
     <!-- Load scripts -->
     <script src="./public/main.min.js"></script>
+    <script>
+      var timeMenu = document.querySelector('.time__menu');
+      var timeModal = document.querySelector('.modal__timetable');
+
+      var aboutMenu = document.querySelector('.about__menu');
+      var aboutModal = document.querySelector('.modal__about');
+
+      var locationMenu = document.querySelector('.location__menu');
+      var locationModal = document.querySelector('.modal__location');
+
+
+      var closeTime = document.querySelector('.close__time');
+      var closeAbout = document.querySelector('.close__about');
+      var closeLocation = document.querySelector('.close__location');
+
+      timeMenu.addEventListener("click", function(){
+        timeModal.classList.toggle('active');
+      });
+      closeTime.addEventListener("click", function(){
+        timeModal.classList.toggle('active');
+      });
+
+      aboutMenu.addEventListener("click", function(){
+        aboutModal.classList.toggle('active');
+      });
+      closeAbout.addEventListener("click", function(){
+        aboutModal.classList.toggle('active');
+      });
+
+      locationMenu.addEventListener("click", function(){
+        locationModal.classList.toggle('active');
+      });
+      closeLocation.addEventListener("click", function(){
+        locationModal.classList.toggle('active');
+      });
+
+    </script>
   </body>
 </html>

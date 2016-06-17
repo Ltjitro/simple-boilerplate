@@ -1,0 +1,134 @@
+.modal{
+  background: white;
+  width: 490px;
+  position: absolute;
+  left: calc(50% - 245px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: $radius;
+  padding: 30px 30px 30px;
+  box-shadow: 0 50px 60px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .25s ease-in-out;
+  transform: translateY(100%) scale(0);
+  transform-origin: center bottom;
+  p{
+    margin-bottom: 1em;
+  }
+}
+.modal__title{
+  font-size: 2.375em;
+  color: #F5A623;
+  font-weight: 300;
+  margin-bottom: .3em;
+}
+
+.modal__text{
+  font-weight: 300;
+  color: #42464D;
+  max-width: 240px;
+  line-height: 1.4em;
+}
+table{
+  margin: 24px 0 24px 0;
+  width: 100%;
+}
+.table__head{
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #9B9B9B;
+}
+td{
+  padding: 8px 0;
+}
+.table__body{
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #42464D;
+}
+
+.close__modal{
+  position: absolute;
+  left: calc(50% - 28px);
+  bottom: -38px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #F5A623 url(cross.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,.35);
+  padding: 0;
+  border: none;
+  &:hover{
+    background: #F5A623 url(cross.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-3px);
+    box-shadow: 0 13px 20px rgba(0,0,0,.45);
+  }
+}
+
+.modal__timetable{
+  &.active{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+.modal__about,
+.modal__location{
+  &.active{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    p{
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: .5em;
+      line-height: 1.1em;
+      span{
+        color: #9B9B9B;
+      }
+    }
+  }
+}
+.modal__location{
+  width: 798px;
+  left: calc(50% - 399px);
+  padding: 0;
+  display: flex;
+}
+.left__modal{
+  padding: 30px;
+    max-width: 399px;
+}
+.directbtn{
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  border-radius: 4px;
+  padding: 15px 10px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.map{
+  max-width: 399px;
+  width: 100%;
+  min-height: 100%;
+  background: url(map.png);
+  background-size: cover;
+  display: block;
+  position: absolute;
+  right: 0;
+
+}
+
+.about__colophon{
+  font-size: 12px;
+  color: #6C4A12;
+  margin-bottom: 0;
+}
