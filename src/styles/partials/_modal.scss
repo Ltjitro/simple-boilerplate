@@ -17,8 +17,8 @@
   }
 }
 .modal__title{
-  font-size: 2.375em;
-  color: #F5A623;
+  font-size: 1.9em;
+  color: $brand-color;
   font-weight: 300;
   margin-bottom: .3em;
 }
@@ -27,10 +27,15 @@
   font-weight: 300;
   color: #42464D;
   max-width: 240px;
-  line-height: 1.4em;
+  line-height: 1em;
+}
+
+.modal p{
+	font-weight: 300;
+	font-size: 0.9375em;
 }
 table{
-  margin: 24px 0 24px 0;
+  margin: 24px 0 10px 0;
   width: 100%;
 }
 .table__head{
@@ -43,7 +48,7 @@ td{
   padding: 8px 0;
 }
 .table__body{
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 300;
   color: #42464D;
 }
@@ -55,7 +60,7 @@ td{
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #F5A623 url(cross.svg);
+  background: #CEA92A url(cross.svg);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,7 +68,7 @@ td{
   padding: 0;
   border: none;
   &:hover{
-    background: #F5A623 url(cross.svg);
+    background: #CEA92A url(cross.svg);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,6 +83,11 @@ td{
     transform: translateY(-50%) scale(1);
   }
 }
+.modal__about a{
+	  color: #6C4A12;
+	  font-weight: 400;
+}
+
 .modal__about{
   width: 100%;
   width: 600px;
@@ -100,7 +110,7 @@ td{
         font-size: 1.5em;
         font-weight: 300;
         margin-bottom: .5em;
-        line-height: 1.1em;
+        line-height: 1.3em;
         span{
           color: #9B9B9B;
         }

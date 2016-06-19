@@ -1,6 +1,54 @@
-@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */}
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media (max-width:500px) { 
+	
+	/* Navigation */
+	.main__navigation__list__item{
+		margin: 0 ($gutter * 0.25);
+		font-size: 0.89em;
+	}
+	
+	/* Time info*/
+	.time__info{
+		left: 45px;
+	}
+	.tagline{
+		font-size: 1.1em;
+	}
+	.time__text{
+		font-size: 1em;
+	}
+	.time__info__title{
+		font-size: 0.8em;
+	}
+	.time__phase{
+		font-size: 1em;
+	}
+	
+	/* Module */
+	.modal{
+		width: 100%;
+		left:0;
+		  padding: 25px 25px 25px;
+	}
+	.modal__title{
+		font-size: 1.6em;
+		margin-bottom: 0.1em
+	}
+	.modal p{
+		font-size: 0.9em;
+	}
+	.table__head{
+		font-size: 0.8em;
+	}
+	.table__body{
+		font-size: 0.9em;
+	}
+
+}
+
